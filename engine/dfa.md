@@ -1,13 +1,18 @@
-[Back](./engine.md) | [Next](./dfa.md)
+[Back](./engine.md) | [Next](./nfa.md)
 
-# Building a NFA/DFA RegEx machine
-One way to build a RegEx engine is implementing a finite state machine (FSM). 
+# The simplest of all RegEx engines
+Let's start by implementing the simplest of all RegEx engines which can only understand string literals as units. No character classes, no special characters, nothing. 
+
+How can we implement this?
+
+## Building a DFA RegEx machine
+One way to build a RegEx engine is to implement it as a finite state machine (FSM). 
 
 A finite state machine consists of **states** and **events**. With events we can transmit from one state to another (or also stay in the same state). But we can only be at one state at any given time.
 
 Let's have a look at an example. (this example is taken from the he wikipedia page about finite state machines) 
 
-# Turnstile as a state machine
+## Turnstile as a state machine
 If we look at as turnstile as a state machine we come to the conclusion, that it has two states: it can be *locked* (no one can pass), or it can be *unlocked* (let exactly one person through). 
 
 ![Turnstile](images/turnstile.jpg "Turnstile")
@@ -22,5 +27,8 @@ Drawn as a state machine the descibed behaviour looks like this:
 
 We now look at multiple implementations of a state machine in python. 
 
+
 ## A regular expression as a Finite State Machine
 
+
+# What is determinism?
