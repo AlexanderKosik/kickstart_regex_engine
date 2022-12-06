@@ -12,5 +12,5 @@ Every engine differs in the way how simple they are to built, how fast they can 
 
 We start by implementing a **DFA** regex machine. 
 
-[Overview](./overview.md) | [Next (DFA)](./engine/dfa.md)
+[Next (DFA)](./engine/dfa.md)
 

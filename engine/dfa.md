@@ -30,5 +30,3 @@ We now look at multiple implementations of a state machine in python.
 
 ## A regular expression as a Finite State Machine
 
-
-# What is determinism?
